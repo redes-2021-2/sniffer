@@ -13,7 +13,7 @@
 		- ICMP( V4 and V6)
 	
 ## Run
-	-sudo python3 Packet-Sniffer.py
-	-sudo python3 Packet-Sniffer.py UDP
-	-sudo python3 Packet-Sniffer.py ICMP
-	-sudo python3 Packet-Sniffer.py TCP
+	-sudo python3 sniffer.py
+	-sudo python3 sniffer.py UDP
+	-sudo python3 sniffer.py ICMP
+	-sudo python3 sniffer.py TCP

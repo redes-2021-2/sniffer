@@ -20,15 +20,11 @@ def main():
 
     filters = (["ICMP", 1, "ICMPv6"],["UDP", 17, "UDP"], ["TCP", 6, "TCP"])
     filter = []
-
     if len(sys.argv) == 2:
         print("This is the filter: ", sys.argv[1])
         for f in filters:
             if sys .argv[1] == f[0]:
                 filter = f
-
-
-
     while True:
         raw_data, addr = conn.recvfrom(65536)
         dest_mac, src_mac, eth_proto, data = ethernet_frame(raw_data)
